@@ -1,13 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/User"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/Llay1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="UserName"
-        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+        android:orientation="horizontal">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:text="User Name" />
 
+            <EditText
+                android:id="@+id/UserName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Llayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Plan Date"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/PlanDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="mm/dd/yyyy"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Llayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Plan Name"
+            android:textSize="20dp"
+            android:layout_weight = "1"
+             />
+
+        <EditText
+            android:id="@+id/PlanName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_weight ="1"/>
+
+    </LinearLayout>
 </LinearLayout>
