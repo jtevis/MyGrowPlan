@@ -186,6 +186,51 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bGetBabyPic"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:onClick="GetBabyPic"
+            android:text="Get Baby Picture" />
+       <ImageView
+           android:layout_width="0dp"
+           android:layout_height="100dp"
+            android:layout_weight="1.5"/>
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bSavePlan"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="SavePlan"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/bCancelPlan"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:elevation="0dp"
+            android:onClick="CancelPlan"
+            android:text="Cancel" />
+    </LinearLayout>
+
+</LinearLayout>
 
