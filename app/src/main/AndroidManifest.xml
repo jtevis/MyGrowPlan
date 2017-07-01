@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".NewPlan"
+            android:name=".NewPlanSimple"
             android:label="New Plan">
         </activity>
 
