@@ -17,12 +17,12 @@
                 android:textSize="20dp"
                 android:text="User Name" />
 
-            <EditText
-                android:id="@+id/UserName"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/UserName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textEmailAddress|textPersonName"/>
 
     </LinearLayout>
 
@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="mm/dd/yyyy"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName|date"/>
 
     </LinearLayout>
     <LinearLayout
@@ -86,8 +86,9 @@
             android:id="@+id/PlantDate"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:layout_weight ="1"/>
+            android:layout_weight="1"
+            android:hint="mm/dd/yyyyy"
+            android:inputType="textPersonName|date"/>
 
     </LinearLayout>
     <LinearLayout
@@ -109,25 +110,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Life Cycle"
-            android:textSize="20dp"
-            android:layout_weight = "1"
-            />
-        <Spinner
-            android:id="@+id/LifeCycle"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
-    </LinearLayout>
 
     <LinearLayout
     android:layout_width="match_parent"
@@ -178,14 +161,21 @@
             android:layout_height="wrap_content"
             android:text="Quantity"
             android:textSize="20dp"
-            android:layout_weight = "1"
+            android:layout_weight = ".5"
             />
+
         <EditText
             android:id="@+id/Quantity"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:layout_weight ="1"/>
+            android:layout_weight=".3"
+            android:inputType="textPersonName|number"/>
+        <Spinner
+            android:id="@+id/qUnits"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
     </LinearLayout>
 
     <LinearLayout
@@ -201,11 +191,14 @@
             android:textSize="20dp"
             android:layout_weight = "1"
             />
-        <Spinner
+        <EditText
             android:id="@+id/EPPO"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:inputType="textPersonName"
+            android:layout_weight =".3"/>
+
+
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -220,7 +213,7 @@
             android:layout_height="wrap_content"
             android:layout_weight=".5"
             android:onClick="GetBabyPic"
-            android:text="Get Baby Picture" />
+            android:text="Baby Picture" />
        <ImageView
            android:layout_width="0dp"
            android:layout_height="100dp"
@@ -239,8 +232,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:onClick="SavePlan"
-            android:text="Save" />
+            android:onClick="OnClickSavePlan"
+            android:text="Save"/>
 
         <Button
             android:id="@+id/bCancelPlan"
